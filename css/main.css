@@ -11,6 +11,13 @@ body {
   height: 812px;
 }
 
+@media (min-width: 1440px) {
+  body {
+    width: 1440px;
+    height: 822px;
+  }
+}
+
 .main-container {
   background-color: #674baf;
   background-image: url("../images/bg-mobile.svg");
@@ -28,11 +35,31 @@ body {
           flex-direction: column;
 }
 
+@media (min-width: 1440px) {
+  .main-container {
+    background-image: url("../images/bg-desktop.svg");
+    background-position: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .main-container .logo {
   width: 120px;
   height: 19px;
   margin-left: 40px;
   margin-top: 38.2px;
+}
+
+@media (min-width: 1440px) {
+  .main-container .logo {
+    width: 200px;
+    height: 32px;
+    margin-top: 64px;
+    margin-left: 75px;
+  }
 }
 
 .main-container .illustration {
@@ -43,12 +70,31 @@ body {
   left: 40px;
 }
 
+@media (min-width: 1440px) {
+  .main-container .illustration {
+    position: block;
+    width: 696px;
+    height: 493px;
+    margin-left: 75px;
+    margin-top: 100px;
+  }
+}
+
 .main-container .txt-container {
   width: 304px;
   height: 272px;
   position: absolute;
   top: 396px;
   left: 40px;
+}
+
+@media (min-width: 1440px) {
+  .main-container .txt-container {
+    width: 520px;
+    height: 305px;
+    top: 232px;
+    left: 865px;
+  }
 }
 
 .main-container .txt-container h1 {
@@ -60,6 +106,14 @@ body {
   color: #FFFFFF;
 }
 
+@media (min-width: 1440px) {
+  .main-container .txt-container h1 {
+    font-size: 40px;
+    line-height: 60px;
+    text-align: start;
+  }
+}
+
 .main-container .txt-container p {
   margin-top: 16px;
   font-family: "Open Sans", sans-serif;
@@ -67,6 +121,15 @@ body {
   line-height: 24px;
   text-align: center;
   color: #FFFFFF;
+}
+
+@media (min-width: 1440px) {
+  .main-container .txt-container p {
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 24px;
+    text-align: start;
+  }
 }
 
 .main-container .txt-container .boton {
@@ -85,6 +148,23 @@ body {
   color: #684BB1;
 }
 
+@media (min-width: 1440px) {
+  .main-container .txt-container .boton {
+    width: 200px;
+    height: 56px;
+    margin-left: 0px;
+    -webkit-box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+            box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+    border-radius: 28px;
+  }
+}
+
+.main-container .txt-container .boton:hover {
+  background: #e882e8;
+  color: white;
+  cursor: pointer;
+}
+
 .main-container .social-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,8 +180,29 @@ body {
   margin-top: 64px;
 }
 
+@media (min-width: 1440px) {
+  .main-container .social-container {
+    width: 152px;
+    height: 40px;
+    margin-top: 0;
+    left: 1208px;
+  }
+}
+
 .main-container .social-container .social-icon {
   width: 27.5px;
   height: 28px;
+}
+
+@media (min-width: 1440px) {
+  .main-container .social-container .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.main-container .social-container .social-icon:hover {
+  cursor: pointer;
+  color: #e882e8;
 }
 /*# sourceMappingURL=main.css.map */

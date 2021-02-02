@@ -14,12 +14,28 @@
     display: flex;
     flex-direction: column;
 
+    @media (min-width: $desktop) {
+        background-image: url('../images/bg-desktop.svg');
+        
+        background-position: center;
+
+        flex-direction: row;
+    }
+
     .logo {
         width: 120px;
         height: 19px;
 
         margin-left: 40px;
         margin-top: 38.2px;
+
+        @media(min-width: $desktop) {
+            width: 200px;
+            height: 32px;
+
+            margin-top: 64px;
+            margin-left: 75px;
+        }
     }
 
     .illustration {
@@ -28,7 +44,17 @@
 
         position: absolute;
         top: 127px;
-        left: 40px;     
+        left: 40px; 
+        
+        @media(min-width: $desktop) {
+            position: block;
+
+            width: 696px;
+            height: 493px;
+
+            margin-left: 75px;
+            margin-top: 100px;
+        }
     }
 
     .txt-container {
@@ -39,6 +65,16 @@
         top: 396px;
         left: 40px;
 
+        @media(min-width: $desktop) {
+            width: 520px;
+            height: 305px;
+
+            top: 232px;
+            left: 865px;
+
+            
+        }
+
         h1 {
             font-family: $heading-font;
             font-weight: 600;
@@ -48,6 +84,13 @@
             text-align: center;
 
             color: #FFFFFF;
+
+            @media(min-width: $desktop) {
+                font-size: 40px;
+                line-height: 60px;
+
+                text-align: start;
+            }
         }
 
         p {
@@ -60,6 +103,15 @@
             text-align: center;
 
             color: #FFFFFF;
+
+            @media(min-width: $desktop) {
+                font-size: 18px;
+                line-height: 27px;
+
+                margin-top: 24px;
+
+                text-align: start;
+            }
         }
 
         .boton {
@@ -80,6 +132,22 @@
             text-align: center;
 
             color: #684BB1;
+
+            @media(min-width: $desktop) {
+                width: 200px;
+                height: 56px;
+
+                margin-left: 0px;
+
+                box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+                border-radius: 28px;
+            }
+        }
+
+        .boton:hover {
+            background: $magenta;
+            color: white;
+            cursor: pointer;
         }
     }
 
@@ -96,9 +164,28 @@
 
         margin-top: 64px;
 
+        @media(min-width: $desktop) {
+            width: 152px;
+            height: 40px;
+
+            margin-top: 0;
+
+            left: 1208px;
+        }
+
         .social-icon {
             width: 27.5px;
             height: 28px;
+
+            @media(min-width: $desktop){
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .social-icon:hover {
+            cursor: pointer;
+            color: $magenta;
         }
     }
 }
