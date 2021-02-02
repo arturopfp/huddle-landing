@@ -1,0 +1,107 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  width: 375px;
+  height: 812px;
+}
+
+.main-container {
+  background-color: #674baf;
+  background-image: url("../images/bg-mobile.svg");
+  background-position: top;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container .logo {
+  width: 120px;
+  height: 19px;
+  margin-left: 40px;
+  margin-top: 38.2px;
+}
+
+.main-container .illustration {
+  width: 296px;
+  height: 209px;
+  position: absolute;
+  top: 127px;
+  left: 40px;
+}
+
+.main-container .txt-container {
+  width: 304px;
+  height: 272px;
+  position: absolute;
+  top: 396px;
+  left: 40px;
+}
+
+.main-container .txt-container h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.main-container .txt-container p {
+  margin-top: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.main-container .txt-container .boton {
+  background: #FFFFFF;
+  -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+          box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  margin-top: 24px;
+  margin-left: 52px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #684BB1;
+}
+
+.main-container .social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  bottom: 40px;
+  left: 136px;
+  width: 104px;
+  height: 28px;
+  margin-top: 64px;
+}
+
+.main-container .social-container .social-icon {
+  width: 27.5px;
+  height: 28px;
+}
+/*# sourceMappingURL=main.css.map */
